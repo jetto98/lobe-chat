@@ -8,7 +8,7 @@
 支持语音合成、多模态、可扩展的（[function call][docs-functionc-call]）插件系统<br/>
 一键**免费**拥有你自己的 ChatGPT/Gemini/Claude/Ollama 应用
 
-[English](./README.md) · [繁體中文](./README.zh-TW.md) · **简体中文** · [日本語](./README.ja-JP.md) · [官网][official-site] · [更新日志][changelog] · [文档][docs] · [博客][blog] · [反馈问题][github-issues-link]
+[English](./README.md) · **简体中文** · [官网][official-site] · [更新日志][changelog] · [文档][docs] · [博客][blog] · [反馈问题][github-issues-link]
 
 <!-- SHIELD GROUP -->
 
@@ -41,7 +41,7 @@
 [![][github-trending-shield]][github-trending-url]
 [![][github-hello-shield]][github-hello-url]
 
-[![][image-overview]][vercel-link]
+![][image-overview]
 
 </div>
 
@@ -52,20 +52,23 @@
 
 - [👋🏻 开始使用 & 交流](#-开始使用--交流)
 - [✨ 特性一览](#-特性一览)
-  - [`1` 文件上传 / 知识库](#1-文件上传--知识库)
-  - [`2` 多模型服务商支持](#2-多模型服务商支持)
-  - [`3` 支持本地大语言模型 (LLM)](#3-支持本地大语言模型-llm)
-  - [`4` 模型视觉识别 (Model Visual)](#4-模型视觉识别-model-visual)
-  - [`5` TTS & STT 语音会话](#5-tts--stt-语音会话)
-  - [`6` Text to Image 文生图](#6-text-to-image-文生图)
-  - [`7` 插件系统 (Tools Calling)](#7-插件系统-tools-calling)
-  - [`8` 助手市场 (GPTs)](#8-助手市场-gpts)
-  - [`9` 支持本地 / 远程数据库](#9-支持本地--远程数据库)
-  - [`10` 支持多用户管理](#10-支持多用户管理)
-  - [`11` 渐进式 Web 应用 (PWA)](#11-渐进式-web-应用-pwa)
-  - [`12` 移动设备适配](#12-移动设备适配)
-  - [`13` 自定义主题](#13-自定义主题)
-  - [更多特性](#更多特性)
+  - [`1` 思维链 (CoT)](#1-思维链-cot)
+  - [`2` 分支对话](#2-分支对话)
+  - [`3` 支持白板 (Artifacts)](#3-支持白板-artifacts)
+  - [`4` 文件上传 / 知识库](#4-文件上传--知识库)
+  - [`5` 多模型服务商支持](#5-多模型服务商支持)
+  - [`6` 支持本地大语言模型 (LLM)](#6-支持本地大语言模型-llm)
+  - [`7` 模型视觉识别 (Model Visual)](#7-模型视觉识别-model-visual)
+  - [`8` TTS & STT 语音会话](#8-tts--stt-语音会话)
+  - [`9` Text to Image 文生图](#9-text-to-image-文生图)
+  - [`10` 插件系统 (Tools Calling)](#10-插件系统-tools-calling)
+  - [`11` 助手市场 (GPTs)](#11-助手市场-gpts)
+  - [`12` 支持本地 / 远程数据库](#12-支持本地--远程数据库)
+  - [`13` 支持多用户管理](#13-支持多用户管理)
+  - [`14` 渐进式 Web 应用 (PWA)](#14-渐进式-web-应用-pwa)
+  - [`15` 移动设备适配](#15-移动设备适配)
+  - [`16` 自定义主题](#16-自定义主题)
+  - [`*` 更多特性](#-更多特性)
 - [⚡️ 性能测试](#️-性能测试)
 - [🛳 开箱即用](#-开箱即用)
   - [`A` 使用 Vercel、Zeabur 、Sealos 或 阿里云计算巢 部署](#a-使用-vercelzeabur-sealos-或-阿里云计算巢-部署)
@@ -111,9 +114,48 @@
 
 ## ✨ 特性一览
 
+[![][image-feat-cot]][docs-feat-cot]
+
+### `1` [思维链 (CoT)][docs-feat-cot]
+
+体验前所未有的 AI 推理过程。通过创新的思维链（CoT）可视化功能，您可以实时观察复杂问题是如何一步步被解析的。这项突破性的功能为 AI 的决策过程提供了前所未有的透明度，让您能够清晰地了解结论是如何得出的。
+
+通过将复杂的推理过程分解为清晰的逻辑步骤，您可以更好地理解和验证 AI 的解题思路。无论您是在调试问题、学习知识，还是单纯对 AI 推理感兴趣，思维链可视化都能将抽象思维转化为一种引人入胜的互动体验。
+
+[![][back-to-top]](#readme-top)
+
+[![][image-feat-branch]][docs-feat-branch]
+
+### `2` [分支对话][docs-feat-branch]
+
+为您带来更自然、更灵活的 AI 对话方式。通过分支对话功能，您的讨论可以像人类对话一样自然延伸。在任意消息处创建新的对话分支，让您在保留原有上下文的同时，自由探索不同的对话方向。
+
+两种强大模式任您选择：
+
+- **延续模式**：无缝延展当前讨论，保持宝贵的对话上下文
+- **独立模式**：基于任意历史消息，开启全新话题探讨
+
+这项突破性功能将线性对话转变为动态的树状结构，让您能够更深入地探索想法，实现更高效的互动体验。
+
+[![][back-to-top]](#readme-top)
+
+[![][image-feat-artifacts]][docs-feat-artifacts]
+
+### `3` [支持白板 (Artifacts)][docs-feat-artifacts]
+
+体验集成于 LobeChat 的 Claude Artifacts 能力。这项革命性功能突破了 AI 人机交互的边界，让您能够实时创建和可视化各种格式的内容。
+
+以前所未有的灵活度进行创作与可视化：
+
+- 生成并展示动态 SVG 图形
+- 实时构建与渲染交互式 HTML 页面
+- 输出多种格式的专业文档
+
+[![][back-to-top]](#readme-top)
+
 [![][image-feat-knowledgebase]][docs-feat-knowledgebase]
 
-### `1` [文件上传 / 知识库][docs-feat-knowledgebase]
+### `4` [文件上传 / 知识库][docs-feat-knowledgebase]
 
 LobeChat 支持文件上传与知识库功能，你可以上传文件、图片、音频、视频等多种类型的文件，以及创建知识库，方便用户管理和查找文件。同时在对话中使用文件和知识库功能，实现更加丰富的对话体验。
 
@@ -131,7 +173,7 @@ LobeChat 支持文件上传与知识库功能，你可以上传文件、图片�
 
 [![][image-feat-privoder]][docs-feat-provider]
 
-### `2` [多模型服务商支持][docs-feat-provider]
+### `5` [多模型服务商支持][docs-feat-provider]
 
 在 LobeChat 的不断发展过程中，我们深刻理解到在提供 AI 会话服务时模型服务商的多样性对于满足社区需求的重要性。因此，我们不再局限于单一的模型服务商，而是拓展了对多种模型服务商的支持，以便为用户提供更为丰富和多样化的会话选择。
 
@@ -149,14 +191,16 @@ LobeChat 支持文件上传与知识库功能，你可以上传文件、图片�
 - **[Bedrock](https://lobechat.com/discover/provider/bedrock)**: Bedrock 是亚马逊 AWS 提供的一项服务，专注于为企业提供先进的 AI 语言模型和视觉模型。其模型家族包括 Anthropic 的 Claude 系列、Meta 的 Llama 3.1 系列等，涵盖从轻量级到高性能的多种选择，支持文本生成、对话、图像处理等多种任务，适用于不同规模和需求的企业应用。
 - **[Google](https://lobechat.com/discover/provider/google)**: Google 的 Gemini 系列是其最先进、通用的 AI 模型，由 Google DeepMind 打造，专为多模态设计，支持文本、代码、图像、音频和视频的无缝理解与处理。适用于从数据中心到移动设备的多种环境，极大提升了 AI 模型的效率与应用广泛性。
 - **[DeepSeek](https://lobechat.com/discover/provider/deepseek)**: DeepSeek 是一家专注于人工智能技术研究和应用的公司，其最新模型 DeepSeek-V3 多项评测成绩超越 Qwen2.5-72B 和 Llama-3.1-405B 等开源模型，性能对齐领军闭源模型 GPT-4o 与 Claude-3.5-Sonnet。
+- **[PPIO](https://lobechat.com/discover/provider/ppio)**: PPIO 派欧云提供稳定、高性价比的开源模型 API 服务，支持 DeepSeek 全系列、Llama、Qwen 等行业领先大模型。
 - **[HuggingFace](https://lobechat.com/discover/provider/huggingface)**: HuggingFace Inference API 提供了一种快速且免费的方式，让您可以探索成千上万种模型，适用于各种任务。无论您是在为新应用程序进行原型设计，还是在尝试机器学习的功能，这个 API 都能让您即时访问多个领域的高性能模型。
 - **[OpenRouter](https://lobechat.com/discover/provider/openrouter)**: OpenRouter 是一个提供多种前沿大模型接口的服务平台，支持 OpenAI、Anthropic、LLaMA 及更多，适合多样化的开发和应用需求。用户可根据自身需求灵活选择最优的模型和价格，助力 AI 体验的提升。
 - **[Cloudflare Workers AI](https://lobechat.com/discover/provider/cloudflare)**: 在 Cloudflare 的全球网络上运行由无服务器 GPU 驱动的机器学习模型。
+
+<details><summary><kbd>See more providers (+30)</kbd></summary>
+
 - **[GitHub](https://lobechat.com/discover/provider/github)**: 通过 GitHub 模型，开发人员可以成为 AI 工程师，并使用行业领先的 AI 模型进行构建。
-
-<details><summary><kbd>See more providers (+26)</kbd></summary>
-
 - **[Novita](https://lobechat.com/discover/provider/novita)**: Novita AI 是一个提供多种大语言模型与 AI 图像生成的 API 服务的平台，灵活、可靠且具有成本效益。它支持 Llama3、Mistral 等最新的开源模型，并为生成式 AI 应用开发提供了全面、用户友好且自动扩展的 API 解决方案，适合 AI 初创公司的快速发展。
+- **[PPIO](https://lobechat.com/discover/provider/ppio)**: PPIO 派欧云提供稳定、高性价比的开源模型 API 服务，支持 DeepSeek 全系列、Llama、Qwen 等行业领先大模型。
 - **[Together AI](https://lobechat.com/discover/provider/togetherai)**: Together AI 致力于通过创新的 AI 模型实现领先的性能，提供广泛的自定义能力，包括快速扩展支持和直观的部署流程，满足企业的各种需求。
 - **[Fireworks AI](https://lobechat.com/discover/provider/fireworksai)**: Fireworks AI 是一家领先的高级语言模型服务商，专注于功能调用和多模态处理。其最新模型 Firefunction V2 基于 Llama-3，优化用于函数调用、对话及指令跟随。视觉语言模型 FireLLaVA-13B 支持图像和文本混合输入。其他 notable 模型包括 Llama 系列和 Mixtral 系列，提供高效的多语言指令跟随与生成支持。
 - **[Groq](https://lobechat.com/discover/provider/groq)**: Groq 的 LPU 推理引擎在最新的独立大语言模型（LLM）基准测试中表现卓越，以其惊人的速度和效率重新定义了 AI 解决方案的标准。Groq 是一种即时推理速度的代表，在基于云的部署中展现了良好的性能。
@@ -182,14 +226,16 @@ LobeChat 支持文件上传与知识库功能，你可以上传文件、图片�
 - **[Gitee AI](https://lobechat.com/discover/provider/giteeai)**: Gitee AI 的 Serverless API 为 AI 开发者提供开箱即用的大模型推理 API 服务。
 - **[Taichu](https://lobechat.com/discover/provider/taichu)**: 中科院自动化研究所和武汉人工智能研究院推出新一代多模态大模型，支持多轮问答、文本创作、图像生成、3D 理解、信号分析等全面问答任务，拥有更强的认知、理解、创作能力，带来全新互动体验。
 - **[360 AI](https://lobechat.com/discover/provider/ai360)**: 360 AI 是 360 公司推出的 AI 模型和服务平台，提供多种先进的自然语言处理模型，包括 360GPT2 Pro、360GPT Pro、360GPT Turbo 和 360GPT Turbo Responsibility 8K。这些模型结合了大规模参数和多模态能力，广泛应用于文本生成、语义理解、对话系统与代码生成等领域。通过灵活的定价策略，360 AI 满足多样化用户需求，支持开发者集成，推动智能化应用的革新和发展。
+- **[Search1API](https://lobechat.com/discover/provider/search1api)**: Search1API 提供可根据需要自行联网的 DeepSeek 系列模型的访问，包括标准版和快速版本，支持多种参数规模的模型选择。
+- **[InfiniAI](https://lobechat.com/discover/provider/infiniai)**: 为应用开发者提供高性能、易上手、安全可靠的大模型服务，覆盖从大模型开发到大模型服务化部署的全流程。
 
 </details>
 
-> 📊 Total providers: [<kbd>**36**</kbd>](https://lobechat.com/discover/providers)
+> 📊 Total providers: [<kbd>**40**</kbd>](https://lobechat.com/discover/providers)
 
  <!-- PROVIDER LIST -->
 
-同时，我们也在计划支持更多的模型服务商，以进一步丰富我们的服务商库。如果你希望让 LobeChat 支持你喜爱的服务商，欢迎加入我们的 [💬 社区讨论](https://github.com/lobehub/lobe-chat/discussions/1284)。
+同时，我们也在计划支持更多的模型服务商，以进一步丰富我们的服务商库。如果你希望让 LobeChat 支持你喜爱的服务商，欢迎加入我们的 [💬 社区讨论](https://github.com/lobehub/lobe-chat/discussions/6157)。
 
 <div align="right">
 
@@ -199,7 +245,7 @@ LobeChat 支持文件上传与知识库功能，你可以上传文件、图片�
 
 [![][image-feat-local]][docs-feat-local]
 
-### `3` [支持本地大语言模型 (LLM)][docs-feat-local]
+### `6` [支持本地大语言模型 (LLM)][docs-feat-local]
 
 为了满足特定用户的需求，LobeChat 还基于 [Ollama](https://ollama.ai) 支持了本地模型的使用，让用户能够更灵活地使用自己的或第三方的模型。
 
@@ -215,7 +261,7 @@ LobeChat 支持文件上传与知识库功能，你可以上传文件、图片�
 
 [![][image-feat-vision]][docs-feat-vision]
 
-### `4` [模型视觉识别 (Model Visual)][docs-feat-vision]
+### `7` [模型视觉识别 (Model Visual)][docs-feat-vision]
 
 LobeChat 已经支持 OpenAI 最新的 [`gpt-4-vision`](https://platform.openai.com/docs/guides/vision) 支持视觉识别的模型，这是一个具备视觉识别能力的多模态应用。
 用户可以轻松上传图片或者拖拽图片到对话框中，助手将能够识别图片内容，并在此基础上进行智能对话，构建更智能、更多元化的聊天场景。
@@ -230,7 +276,7 @@ LobeChat 已经支持 OpenAI 最新的 [`gpt-4-vision`](https://platform.openai.
 
 [![][image-feat-tts]][docs-feat-tts]
 
-### `5` [TTS & STT 语音会话][docs-feat-tts]
+### `8` [TTS & STT 语音会话][docs-feat-tts]
 
 LobeChat 支持文字转语音（Text-to-Speech，TTS）和语音转文字（Speech-to-Text，STT）技术，这使得我们的应用能够将文本信息转化为清晰的语音输出，用户可以像与真人交谈一样与我们的对话助手进行交流。
 用户可以从多种声音中选择，给助手搭配合适的音源。 同时，对于那些倾向于听觉学习或者想要在忙碌中获取信息的用户来说，TTS 提供了一个极佳的解决方案。
@@ -245,7 +291,7 @@ LobeChat 支持文字转语音（Text-to-Speech，TTS）和语音转文字（Spe
 
 [![][image-feat-t2i]][docs-feat-t2i]
 
-### `6` [Text to Image 文生图][docs-feat-t2i]
+### `9` [Text to Image 文生图][docs-feat-t2i]
 
 支持最新的文本到图片生成技术，LobeChat 现在能够让用户在与助手对话中直接调用文生图工具进行创作。
 通过利用 [`DALL-E 3`](https://openai.com/dall-e-3)、[`MidJourney`](https://www.midjourney.com/) 和 [`Pollinations`](https://pollinations.ai/) 等 AI 工具的能力， 助手们现在可以将你的想法转化为图像。
@@ -259,7 +305,7 @@ LobeChat 支持文字转语音（Text-to-Speech，TTS）和语音转文字（Spe
 
 [![][image-feat-plugin]][docs-feat-plugin]
 
-### `7` [插件系统 (Tools Calling)][docs-feat-plugin]
+### `10` [插件系统 (Tools Calling)][docs-feat-plugin]
 
 LobeChat 的插件生态系统是其核心功能的重要扩展，它极大地增强了 ChatGPT 的实用性和灵活性。
 
@@ -275,12 +321,12 @@ LobeChat 的插件生态系统是其核心功能的重要扩展，它极大地�
 
 | 最近新增                                                                                                                   | 描述                                                                               |
 | -------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
+| [PortfolioMeta](https://lobechat.com/discover/plugin/StockData)<br/><sup>By **portfoliometa** on **2025-03-23**</sup>      | 分析股票并获取全面的实时投资数据和分析。<br/>`股票`                                |
 | [网页](https://lobechat.com/discover/plugin/web)<br/><sup>By **Proghit** on **2025-01-24**</sup>                           | 智能网页搜索，读取和分析页面，以提供来自 Google 结果的全面答案。<br/>`网页` `搜索` |
 | [MintbaseSearch](https://lobechat.com/discover/plugin/mintbasesearch)<br/><sup>By **mintbase** on **2024-12-31**</sup>     | 在 NEAR 协议上查找任何 NFT 数据。<br/>`加密货币` `nft`                             |
 | [必应网页搜索](https://lobechat.com/discover/plugin/Bingsearch-identifier)<br/><sup>By **FineHow** on **2024-12-22**</sup> | 通过 BingApi 搜索互联网上的信息<br/>`bingsearch`                                   |
-| [PortfolioMeta](https://lobechat.com/discover/plugin/StockData)<br/><sup>By **portfoliometa** on **2024-12-22**</sup>      | 分析股票并获取全面的实时投资数据和分析。<br/>`股票`                                |
 
-> 📊 Total plugins: [<kbd>**48**</kbd>](https://lobechat.com/discover/plugins)
+> 📊 Total plugins: [<kbd>**45**</kbd>](https://lobechat.com/discover/plugins)
 
  <!-- PLUGIN LIST -->
 
@@ -292,7 +338,7 @@ LobeChat 的插件生态系统是其核心功能的重要扩展，它极大地�
 
 [![][image-feat-agent]][docs-feat-agent]
 
-### `8` [助手市场 (GPTs)][docs-feat-agent]
+### `11` [助手市场 (GPTs)][docs-feat-agent]
 
 在 LobeChat 的助手市场中，创作者们可以发现一个充满活力和创新的社区，它汇聚了众多精心设计的助手，这些助手不仅在工作场景中发挥着重要作用，也在学习过程中提供了极大的便利。
 我们的市场不仅是一个展示平台，更是一个协作的空间。在这里，每个人都可以贡献自己的智慧，分享个人开发的助手。
@@ -308,14 +354,14 @@ LobeChat 的插件生态系统是其核心功能的重要扩展，它极大地�
 
 <!-- AGENT LIST -->
 
-| 最近新增                                                                                                                                                                         | 描述                                                                                   |
-| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
-| [小智法语翻译助手](https://lobechat.com/discover/assistant/xiao-zhi-french-translation-asst-v-1)<br/><sup>By **[WeR-Best](https://github.com/WeR-Best)** on **2025-02-10**</sup> | 友好、专业、富有同理心的法语翻译 AI 助手<br/>`ai助手` `法语翻译` `跨文化交流` `创造力` |
-| [命理研究员](https://lobechat.com/discover/assistant/fate-researcher)<br/><sup>By **[Jack980506](https://github.com/Jack980506)** on **2025-02-06**</sup>                        | 精通八字命<br/>`命理学` `八字` `传统文化`                                              |
-| [语言魅力学习导师](https://lobechat.com/discover/assistant/bad-language-helper)<br/><sup>By **[Guducat](https://github.com/Guducat)** on **2025-02-06**</sup>                    | 擅长教学语言的魅力与花样回复<br/>`语言学习` `对话示例`                                 |
-| [Allinone](https://lobechat.com/discover/assistant/allinone-v-1)<br/><sup>By **[AXuanCreator](https://github.com/AXuanCreator)** on **2025-02-06**</sup>                         | 创新・未来・卓越<br/>`编程` `低成本` `简洁回答`                                        |
+| 最近新增                                                                                                                                                                         | 描述                                                                                          |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
+| [学术论文综述专家](https://lobechat.com/discover/assistant/academic-paper-overview)<br/><sup>By **[arvinxx](https://github.com/arvinxx)** on **2025-03-11**</sup>                | 擅长高质量文献检索与分析的学术研究助手<br/>`学术研究` `文献检索` `数据分析` `信息提取` `咨询` |
+| [Cron 表达式助手](https://lobechat.com/discover/assistant/crontab-generate)<br/><sup>By **[edgesider](https://github.com/edgesider)** on **2025-02-17**</sup>                    | Crontab 表达式生成<br/>`crontab` `时间表达` `触发时间` `生成器` `技术辅助`                    |
+| [小智法语翻译助手](https://lobechat.com/discover/assistant/xiao-zhi-french-translation-asst-v-1)<br/><sup>By **[WeR-Best](https://github.com/WeR-Best)** on **2025-02-10**</sup> | 友好、专业、富有同理心的法语翻译 AI 助手<br/>`ai助手` `法语翻译` `跨文化交流` `创造力`        |
+| [投资小助手](https://lobechat.com/discover/assistant/graham-investmentassi)<br/><sup>By **[farsightlin](https://github.com/farsightlin)** on **2025-02-06**</sup>                | 帮助用户计算估值所需的一些数据<br/>`投资` `估值` `财务分析` `计算器`                          |
 
-> 📊 Total agents: [<kbd>**486**</kbd> ](https://lobechat.com/discover/assistants)
+> 📊 Total agents: [<kbd>**488**</kbd> ](https://lobechat.com/discover/assistants)
 
  <!-- AGENT LIST -->
 
@@ -327,7 +373,7 @@ LobeChat 的插件生态系统是其核心功能的重要扩展，它极大地�
 
 [![][image-feat-database]][docs-feat-database]
 
-### `9` [支持本地 / 远程数据库][docs-feat-database]
+### `12` [支持本地 / 远程数据库][docs-feat-database]
 
 LobeChat 支持同时使用服务端数据库和本地数据库。根据您的需求，您可以选择合适的部署方案：
 
@@ -344,7 +390,7 @@ LobeChat 支持同时使用服务端数据库和本地数据库。根据您的�
 
 [![][image-feat-auth]][docs-feat-auth]
 
-### `10` [支持多用户管理][docs-feat-auth]
+### `13` [支持多用户管理][docs-feat-auth]
 
 LobeChat 支持多用户管理，提供了两种主要的用户认证和管理方案，以满足不同需求：
 
@@ -362,7 +408,7 @@ LobeChat 支持多用户管理，提供了两种主要的用户认证和管理�
 
 [![][image-feat-pwa]][docs-feat-pwa]
 
-### `11` [渐进式 Web 应用 (PWA)][docs-feat-pwa]
+### `14` [渐进式 Web 应用 (PWA)][docs-feat-pwa]
 
 我们深知在当今多设备环境下为用户提供无缝体验的重要性。为此，我们采用了渐进式 Web 应用 [PWA](https://support.google.com/chrome/answer/9658361) 技术，
 这是一种能够将网页应用提升至接近原生应用体验的现代 Web 技术。通过 PWA，LobeChat 能够在桌面和移动设备上提供高度优化的用户体验，同时保持轻量级和高性能的特点。
@@ -385,7 +431,7 @@ LobeChat 支持多用户管理，提供了两种主要的用户认证和管理�
 
 [![][image-feat-mobile]][docs-feat-mobile]
 
-### `12` [移动设备适配][docs-feat-mobile]
+### `15` [移动设备适配][docs-feat-mobile]
 
 针对移动设备进行了一系列的优化设计，以提升用户的移动体验。目前，我们正在对移动端的用户体验进行版本迭代，以实现更加流畅和直观的交互。如果您有任何建议或想法，我们非常欢迎您通过 GitHub Issues 或者 Pull Requests 提供反馈。
 
@@ -397,7 +443,7 @@ LobeChat 支持多用户管理，提供了两种主要的用户认证和管理�
 
 [![][image-feat-theme]][docs-feat-theme]
 
-### `13` [自定义主题][docs-feat-theme]
+### `16` [自定义主题][docs-feat-theme]
 
 作为设计工程师出身，LobeChat 在界面设计上充分考虑用户的个性化体验，因此引入了灵活多变的主题模式，其中包括日间的亮色模式和夜间的深色模式。
 除了主题模式的切换，还提供了一系列的颜色定制选项，允许用户根据自己的喜好来调整应用的主题色彩。无论是想要沉稳的深蓝，还是希望活泼的桃粉，或者是专业的灰白，用户都能够在 LobeChat 中找到匹配自己风格的颜色选择。
@@ -412,7 +458,7 @@ LobeChat 支持多用户管理，提供了两种主要的用户认证和管理�
 
 </div>
 
-### 更多特性
+### `*` 更多特性
 
 除了上述功能特性以外，LobeChat 所具有的设计和技术能力将为你带来更多使用保障：
 
@@ -498,27 +544,24 @@ LobeChat 提供了 Vercel 的 自托管版本 和 [Docker 镜像][docker-release
 [![][docker-size-shield]][docker-size-link]
 [![][docker-pulls-shield]][docker-pulls-link]
 
-我们提供了 Docker 镜像，供你在自己的私有设备上部署 LobeChat 服务。使用以下命令即可使用一键启动 LobeChat 服务：
+We provide a Docker image for deploying the LobeChat service on your own private device. Use the following command to start the LobeChat service:
+
+1. create a folder to for storage files
 
 ```fish
-$ docker run -d -p 3210:3210 \
-  -e OPENAI_API_KEY=sk-xxxx \
-  -e ACCESS_CODE=lobe66 \
-  --name lobe-chat \
-  lobehub/lobe-chat
+$ mkdir lobe-chat-db && cd lobe-chat-db
 ```
 
-> \[!TIP]
->
-> 如果你需要通过代理使用 OpenAI 服务，你可以使用 `OPENAI_PROXY_URL` 环境变量来配置代理地址：
+2. 启动一键脚本
 
 ```fish
-$ docker run -d -p 3210:3210 \
-  -e OPENAI_API_KEY=sk-xxxx \
-  -e OPENAI_PROXY_URL=https://api-proxy.com/v1 \
-  -e ACCESS_CODE=lobe66 \
-  --name lobe-chat \
-  lobehub/lobe-chat
+bash <(curl -fsSL https://lobe.li/setup.sh) -l zh_CN
+```
+
+3. 启动 LobeChat
+
+```fish
+docker compose up -d
 ```
 
 > \[!NOTE]
@@ -741,7 +784,7 @@ $ pnpm run dev
 
 </details>
 
-Copyright © 2023 [LobeHub][profile-link]. <br />
+Copyright © 2025 [LobeHub][profile-link]. <br />
 This project is [Apache 2.0](./LICENSE) licensed.
 
 <!-- LINK GROUP -->
@@ -765,24 +808,27 @@ This project is [Apache 2.0](./LICENSE) licensed.
 [deploy-on-alibaba-cloud-button-image]: https://service-info-public.oss-cn-hangzhou.aliyuncs.com/computenest-en.svg
 [deploy-on-alibaba-cloud-link]: https://computenest.console.aliyun.com/service/instance/create/default?type=user&ServiceName=LobeChat%E7%A4%BE%E5%8C%BA%E7%89%88
 [deploy-on-sealos-button-image]: https://raw.githubusercontent.com/labring-actions/templates/main/Deploy-on-Sealos.svg
-[deploy-on-sealos-link]: https://cloud.sealos.io/?openapp=system-template%3FtemplateName%3Dlobe-chat
+[deploy-on-sealos-link]: https://template.hzh.sealos.run/deploy?templateName=lobe-chat-db
 [deploy-on-zeabur-button-image]: https://zeabur.com/button.svg
 [deploy-on-zeabur-link]: https://zeabur.com/templates/VZGGTI
 [discord-link]: https://discord.gg/AYFPHvv2jT
 [discord-shield]: https://img.shields.io/discord/1127171173982154893?color=5865F2&label=discord&labelColor=black&logo=discord&logoColor=white&style=flat-square
 [discord-shield-badge]: https://img.shields.io/discord/1127171173982154893?color=5865F2&label=discord&labelColor=black&logo=discord&logoColor=white&style=for-the-badge
-[docker-pulls-link]: https://hub.docker.com/r/lobehub/lobe-chat
-[docker-pulls-shield]: https://img.shields.io/docker/pulls/lobehub/lobe-chat?color=45cc11&labelColor=black&style=flat-square
-[docker-release-link]: https://hub.docker.com/r/lobehub/lobe-chat
-[docker-release-shield]: https://img.shields.io/docker/v/lobehub/lobe-chat?color=369eff&label=docker&labelColor=black&logo=docker&logoColor=white&style=flat-square
-[docker-size-link]: https://hub.docker.com/r/lobehub/lobe-chat
-[docker-size-shield]: https://img.shields.io/docker/image-size/lobehub/lobe-chat?color=369eff&labelColor=black&style=flat-square
+[docker-pulls-link]: https://hub.docker.com/r/lobehub/lobe-chat-database
+[docker-pulls-shield]: https://img.shields.io/docker/pulls/lobehub/lobe-chat?color=45cc11&labelColor=black&style=flat-square&sort=semver
+[docker-release-link]: https://hub.docker.com/r/lobehub/lobe-chat-database
+[docker-release-shield]: https://img.shields.io/docker/v/lobehub/lobe-chat-database?color=369eff&label=docker&labelColor=black&logo=docker&logoColor=white&style=flat-square&sort=semver
+[docker-size-link]: https://hub.docker.com/r/lobehub/lobe-chat-database
+[docker-size-shield]: https://img.shields.io/docker/image-size/lobehub/lobe-chat-database?color=369eff&labelColor=black&style=flat-square&sort=semver
 [docs]: https://lobehub.com/zh/docs/usage/start
 [docs-dev-guide]: https://github.com/lobehub/lobe-chat/wiki/index
-[docs-docker]: https://lobehub.com/docs/self-hosting/platform/docker
+[docs-docker]: https://lobehub.com/zh/docs/self-hosting/server-database/docker-compose
 [docs-env-var]: https://lobehub.com/docs/self-hosting/environment-variables
 [docs-feat-agent]: https://lobehub.com/docs/usage/features/agent-market
+[docs-feat-artifacts]: https://lobehub.com/docs/usage/features/artifacts
 [docs-feat-auth]: https://lobehub.com/docs/usage/features/auth
+[docs-feat-branch]: https://lobehub.com/docs/usage/features/branching-conversations
+[docs-feat-cot]: https://lobehub.com/docs/usage/features/cot
 [docs-feat-database]: https://lobehub.com/docs/usage/features/database
 [docs-feat-knowledgebase]: https://lobehub.com/blog/knowledge-base
 [docs-feat-local]: https://lobehub.com/docs/usage/features/local-llm
@@ -826,22 +872,25 @@ This project is [Apache 2.0](./LICENSE) licensed.
 [github-stars-shield]: https://img.shields.io/github/stars/lobehub/lobe-chat?color=ffcb47&labelColor=black&style=flat-square
 [github-trending-shield]: https://trendshift.io/api/badge/repositories/2256
 [github-trending-url]: https://trendshift.io/repositories/2256
-[image-banner]: https://github.com/lobehub/lobe-chat/assets/28616219/9f155dff-4737-429f-9cad-a70a1a860c5f
-[image-feat-agent]: https://github-production-user-asset-6210df.s3.amazonaws.com/17870709/268670869-f1ffbf66-42b6-42cf-a937-9ce1f8328514.png
-[image-feat-auth]: https://github.com/lobehub/lobe-chat/assets/17870709/8ce70e15-40df-451e-b700-66090fe5b8c2
-[image-feat-database]: https://github.com/lobehub/lobe-chat/assets/17870709/c27a0234-a4e9-40e5-8bcb-42d5ce7e40f9
-[image-feat-knowledgebase]: https://github.com/user-attachments/assets/77e58e1c-c82f-4341-b159-f4eeede9967f
-[image-feat-local]: https://github.com/lobehub/lobe-chat/assets/28616219/ca9a21bc-ea6c-4c90-bf4a-fa53b4fb2b5c
-[image-feat-mobile]: https://gw.alipayobjects.com/zos/kitchen/R441AuFS4W/mobile.webp
-[image-feat-plugin]: https://github-production-user-asset-6210df.s3.amazonaws.com/17870709/268670883-33c43a5c-a512-467e-855c-fa299548cce5.png
-[image-feat-privoder]: https://github.com/lobehub/lobe-chat/assets/28616219/b164bc54-8ba2-4c1e-b2f2-f4d7f7e7a551
-[image-feat-pwa]: https://gw.alipayobjects.com/zos/kitchen/69x6bllkX3/pwa.webp
-[image-feat-t2i]: https://github-production-user-asset-6210df.s3.amazonaws.com/17870709/297746445-0ff762b9-aa08-4337-afb7-12f932b6efbb.png
-[image-feat-theme]: https://gw.alipayobjects.com/zos/kitchen/pvus1lo%26Z7/darkmode.webp
-[image-feat-tts]: https://github-production-user-asset-6210df.s3.amazonaws.com/17870709/284072124-c9853d8d-f1b5-44a8-a305-45ebc0f6d19a.png
-[image-feat-vision]: https://github-production-user-asset-6210df.s3.amazonaws.com/17870709/284072129-382bdf30-e3d6-4411-b5a0-249710b8ba08.png
-[image-overview]: https://github.com/lobehub/lobe-chat/assets/17870709/56b95d48-f573-41cd-8b38-387bf88bc4bf
-[image-star]: https://github.com/lobehub/lobe-chat/assets/17870709/cb06b748-513f-47c2-8740-d876858d7855
+[image-banner]: https://github.com/user-attachments/assets/6f293c7f-47b4-47eb-9202-fe68a942d35b
+[image-feat-agent]: https://github.com/user-attachments/assets/b3ab6e35-4fbc-468d-af10-e3e0c687350f
+[image-feat-artifacts]: https://github.com/user-attachments/assets/7f95fad6-b210-4e6e-84a0-7f39e96f3a00
+[image-feat-auth]: https://github.com/user-attachments/assets/80bb232e-19d1-4f97-98d6-e291f3585e6d
+[image-feat-branch]: https://github.com/user-attachments/assets/92f72082-02bd-4835-9c54-b089aad7fd41
+[image-feat-cot]: https://github.com/user-attachments/assets/f74f1139-d115-4e9c-8c43-040a53797a5e
+[image-feat-database]: https://github.com/user-attachments/assets/f1697c8b-d1fb-4dac-ba05-153c6295d91d
+[image-feat-knowledgebase]: https://github.com/user-attachments/assets/7da7a3b2-92fd-4630-9f4e-8560c74955ae
+[image-feat-local]: https://github.com/user-attachments/assets/1239da50-d832-4632-a7ef-bd754c0f3850
+[image-feat-mobile]: https://github.com/user-attachments/assets/32cf43c4-96bd-4a4c-bfb6-59acde6fe380
+[image-feat-plugin]: https://github.com/user-attachments/assets/66a891ac-01b6-4e3f-b978-2eb07b489b1b
+[image-feat-privoder]: https://github.com/user-attachments/assets/e553e407-42de-4919-977d-7dbfcf44a821
+[image-feat-pwa]: https://github.com/user-attachments/assets/9647f70f-b71b-43b6-9564-7cdd12d1c24d
+[image-feat-t2i]: https://github.com/user-attachments/assets/708274a7-2458-494b-a6ec-b73dfa1fa7c2
+[image-feat-theme]: https://github.com/user-attachments/assets/b47c39f1-806f-492b-8fcb-b0fa973937c1
+[image-feat-tts]: https://github.com/user-attachments/assets/50189597-2cc3-4002-b4c8-756a52ad5c0a
+[image-feat-vision]: https://github.com/user-attachments/assets/18574a1f-46c2-4cbc-af2c-35a86e128a07
+[image-overview]: https://github.com/user-attachments/assets/dbfaa84a-2c82-4dd9-815c-5be616f264a4
+[image-star]: https://github.com/user-attachments/assets/c3b482e7-cef5-4e94-bef9-226900ecfaab
 [issues-link]: https://img.shields.io/github/issues/lobehub/lobe-chat.svg?style=flat
 [lobe-chat-plugins]: https://github.com/lobehub/lobe-chat-plugins
 [lobe-commit]: https://github.com/lobehub/lobe-commit/tree/master/packages/lobe-commit
